@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #c2b9c7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-container {
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33rem;
+  background: #fff;
+  padding: 12px;
+  min-height: 15rem;
+  max-height: fit-content;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+}
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+}
+.aleart {
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  /* min-width: 70px; */
+  /* max-width: fit-content; */
+  text-transform: capitalize;
+  border-radius: 3px;
+  border: none;
+}
+.aleart-succes {
+  padding: 6px 10px;
+  background-color: rgba(22, 227, 22, 0.836);
+  color: #fff;
+}
+.aleart-red {
+  padding: 6px 10px;
+  background-color: rgba(255, 0, 0, 0.9);
+  color: #fff;
+}
+form {
+  border: 1px solid black;
+  text-align: center;
+  margin: auto 15px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+}
+form #input {
+  width: 80%;
+  height: 100%;
+  border: none;
+  background: #ebecef;
+  padding-left: 10px;
+  font-size: 18px;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+form .submit {
+  width: 20%;
+  height: 100%;
+  border: none;
+  background: #28bf17;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  font-size: 17px;
+  color: #f8f3fa;
+  cursor: pointer;
+}
+.submit:hover {
+  color: #efeff2;
+  background: #1ac16d;
+}
+.book-container {
+  text-align: center;
+  visibility: hidden;
+}
+.show-container {
+  text-align: center;
+  visibility: visible;
+}
+.book-list {
+  display: grid;
+}
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.book-item:nth-child(1) {
+  margin-top: 25px;
+}
+/* .book-name, */
+.book-name {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: black;
+  letter-spacing: 1.5px;
+  border: none;
+}
+
+.eddit,
+.delete {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.delete,
+.eddit i {
+  padding: 6px;
+  font-size: 1rem;
+}
+.delete i {
+  color: red;
+}
+.eddit i {
+  color: green;
+}
+.clear {
+  border: 1px solid black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  color: #c1731a;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
